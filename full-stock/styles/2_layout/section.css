@@ -1,0 +1,17 @@
+/* 2_layout/section.css */
+
+.section {
+  padding-block: 3rem; /* top + bottom */
+}
+
+@media (min-width: 40rem) {
+  .section {
+    padding-block: 4rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: 5rem;
+  }
+}

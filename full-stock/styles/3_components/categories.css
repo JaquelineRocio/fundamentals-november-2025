@@ -1,0 +1,22 @@
+.categories__header {
+  max-width: 48rem;
+  margin-bottom: 2.5rem; /* 40px */
+}
+
+.categories__title {
+  font-weight: 700;
+  color: #1c2024;
+  font-size: clamp(1.75rem, 1.2vw + 1.25rem, 2.25rem);
+}
+
+.categories__subtitle {
+  color: #666;
+}
+
+/* lista de categorías */
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 2rem; /* 32px */
+  width: 100%;
+}

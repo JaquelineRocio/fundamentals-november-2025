@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Full Stock</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <section class="header-content">
+      <div class="container header__inner">
         <img src="./images/Logo.svg" alt="logo" class="header__logo" />
+
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__item">
@@ -23,83 +25,226 @@
             </li>
           </ul>
         </nav>
+
         <img
           src="./images/cart.svg"
           alt="carrito de compras"
           class="header__cart"
         />
-      </section>
+      </div>
     </header>
 
-    <main class="main">
-      <section class="hero">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
         <div class="hero__content">
           <div class="hero__text">
-            <h1 class="hero__title">Nuevos productos disponibles</h1>
+            <h2 class="hero__title">Nuevos productos disponibles</h2>
             <p class="hero__description">
-              Un pequeño lote de increíbles productos acaba de llegar. Agrega
-              tus favoritos al carrito antes de que se agoten.
+              Un pequeño lote de increíbles productos acaba de llegar. Agrega tus
+              favoritos al carrito antes de que se agoten.
             </p>
+
             <a href="#" class="hero__button">Compra ahora</a>
           </div>
         </div>
-      </section>
-      <section class="categories">
-        <div class="categories__header">
-          <h1 class="categories__title">Compra por categoría</h1>
-          <p class="categories__description">
-            Explora nuestra selección de productos especialmente diseñados para
-            desarrolladores web. Encuentra lo que buscas navegando por nuestras
-            categorías de polos, tazas, stickers y más.
-          </p>
+      </div>
+    </section>
+
+    <main class="main">
+      <!-- CATEGORIES (usa layout + componentes) -->
+      <section class="section categories">
+        <div class="container">
+          <header class="categories__header">
+            <h2 class="categories__title">Compra por categoría</h2>
+            <p class="categories__subtitle">
+              Explora nuestra selección de productos especialmente diseñados para
+              desarrolladores web. Encuentra lo que buscas navegando por nuestras
+              categorías de polos, tazas, stickers y más.
+            </p>
+          </header>
+
+          <div class="categories__list">
+            <a href="#" class="category">
+              <div class="category__image">
+                <img
+                  src="./images/Rectangle 4923.jpg"
+                  alt="Polos exclusivos para desarrolladores"
+                />
+              </div>
+              <h3 class="category__title">Polos</h3>
+              <p class="category__description">
+                Polos exclusivos con diseños que todo desarrollador querrá lucir.
+                Ideales para llevar el código a donde vayas.
+              </p>
+            </a>
+
+            <a href="#" class="category">
+              <div class="category__image">
+                <img
+                  src="./images/Rectangle 4924.jpg"
+                  alt="Tazas para desarrolladores"
+                />
+              </div>
+              <h3 class="category__title">Tazas</h3>
+              <p class="category__description">
+                Tazas que combinan perfectamente con tu café matutino y tu pasión
+                por la programación. ¡Empieza el día con estilo!
+              </p>
+            </a>
+
+            <a href="#" class="category">
+              <div class="category__image">
+                <img
+                  src="./images/Rectangle 4925.jpg"
+                  alt="Stickers para desarrolladores"
+                />
+              </div>
+              <h3 class="category__title">Stickers</h3>
+              <p class="category__description">
+                Personaliza tu espacio de trabajo con nuestros stickers únicos y
+                muestra tu amor por el desarrollo web.
+              </p>
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div class="categories__list">
-          <div class="category-card">
-            <img
-              src="./images/Rectangle 4923.jpg"
-              alt="Polos"
-              class="category-card__image"
-            />
-            <h2 class="category-card__title">Polos</h2>
-            <p class="category-card__text">
-              Polos exclusivos con diseños que todo desarrollador querrá lucir.
-              Ideales para llevar el código a donde vayas.
-            </p>
-          </div>
+      <!-- NUESTRA PROMESA DE CALIDAD -->
+      <section class="section-sm quality">
+        <div class="container">
+          <h2 class="quality__title">Nuestra Promesa de Calidad</h2>
 
-          <div class="category-card">
-            <img
-              src="./images/Rectangle 4924.jpg"
-              alt="Tazas"
-              class="category-card__image"
-            />
-            <h2 class="category-card__title">Tazas</h2>
-            <p class="category-card__text">
-              Tazas que combinan perfectamente con tu café matutino y tu pasión
-              por la programación. ¡Empieza el día con estilo!
-            </p>
-          </div>
+          <div class="quality__list">
+            <article class="quality__item">
+              <img
+                class="quality__icon"
+                src="./svg/carrito.svg"
+                alt="icono de carrito"
+              />
+              <p class="quality__item-title">Entrega rápida</p>
+              <p class="quality__item-text">
+                Recibe tus productos en tiempo récord, directo a tu puerta, para que
+                puedas disfrutar de ellos cuanto antes.
+              </p>
+            </article>
 
-          <div class="category-card">
-            <img
-              src="./images/Rectangle 4925.jpg"
-              alt="Stickers"
-              class="category-card__image"
-            />
-            <h2 class="category-card__title">Stickers</h2>
-            <p class="category-card__text">
-              Personaliza tu espacio de trabajo con nuestros stickers únicos y
-              muestra tu amor por el desarrollo web.
-            </p>
+            <article class="quality__item">
+              <img
+                class="quality__icon"
+                src="./svg/polo.svg"
+                alt="icono de polo"
+              />
+              <p class="quality__item-title">Satisfacción Garantizada</p>
+              <p class="quality__item-text">
+                Tu felicidad es nuestra prioridad. Si no estás 100% satisfecho,
+                estamos aquí para ayudarte con cambios o devoluciones.
+              </p>
+            </article>
+
+            <article class="quality__item">
+              <img
+                class="quality__icon"
+                src="./svg/insignia.svg"
+                alt="icono de insignia"
+              />
+              <p class="quality__item-title">Materiales de Alta Calidad</p>
+              <p class="quality__item-text">
+                Nos aseguramos de que todos nuestros productos estén hechos con
+                materiales de la más alta calidad.
+              </p>
+            </article>
+
+            <article class="quality__item">
+              <img
+                class="quality__icon"
+                src="./svg/foco.svg"
+                alt="icono de foco"
+              />
+              <p class="quality__item-title">Diseños Exclusivos</p>
+              <p class="quality__item-text">
+                Cada producto está diseñado pensando en los desarrolladores, con
+                estilos únicos que no encontrarás en ningún otro lugar.
+              </p>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- BLOQUE: footer -->
-    <footer class="footer">
-      <p class="footer__text">Footer</p>
+    <!-- FOOTER -->
+    <footer class="footer section-sm">
+      <div class="container footer__inner">
+        <div class="footer__columns">
+          <!-- Sección Tienda -->
+          <section class="footer__section footer__section--store">
+            <h2 class="footer__title">Tienda</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Polos</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Tazas</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Stickers</a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Sección Compañía -->
+          <section class="footer__section footer__section--company">
+            <h2 class="footer__title">Compañía</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Quienes somos</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Términos y condiciones</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Privacidad</a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Sección Conecta -->
+          <section class="footer__section footer__section--social">
+            <h2 class="footer__title">Conecta</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">WhatsApp</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Facebook</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Instagram</a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Newsletter -->
+          <section class="footer__section footer__section--newsletter">
+            <h2 class="footer__title">Suscríbete a nuestro boletín</h2>
+            <p class="footer__subtitle">
+              Recibe las últimas ofertas y descuentos en tu correo semanalmente.
+            </p>
+            <form class="footer__form">
+              <input
+                class="footer__input"
+                type="email"
+                placeholder="Ingresa tu correo electrónico"
+              />
+              <button class="footer__button" type="submit">Suscribirse</button>
+            </form>
+          </section>
+        </div>
+
+        <p class="footer__copyright">
+          Todos los derechos reservados © Full Stock
+        </p>
+      </div>
     </footer>
   </body>
 </html>

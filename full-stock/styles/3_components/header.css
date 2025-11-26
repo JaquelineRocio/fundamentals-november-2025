@@ -1,0 +1,66 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-3) var(--space-5);
+}
+
+.header__logo {
+  height: 2.5rem; /* 40px */
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+}
+
+.header__menu {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #60646c;
+  font-weight: 500;
+}
+
+.header__cart {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsivo header */
+@media (max-width: 48rem) {
+  .header__inner {
+    padding: var(--space-3) var(--space-4);
+  }
+}
+
+@media (max-width: 23.5rem) {
+  .header__inner {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-3);
+  }
+
+  .header__menu {
+    gap: var(--space-2);
+    display: none; /* si luego quieres un menú hamburguesa */
+  }
+
+  .header__link {
+    font-size: 0.875rem;
+  }
+}

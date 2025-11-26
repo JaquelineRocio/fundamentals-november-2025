@@ -1,0 +1,34 @@
+.category {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+
+.category__image {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.category__image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.category__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.category__description {
+  color: #555;
+  line-height: 1.4;
+}
+
+.category:hover .category__title {
+  text-decoration: underline;
+}
