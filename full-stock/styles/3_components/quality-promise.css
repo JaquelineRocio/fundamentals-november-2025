@@ -1,0 +1,57 @@
+/* Base: móviles primero */
+.quality {
+  background-color: #00005506;
+
+}
+
+.quality__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+
+.quality__list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+}
+
+.quality__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.quality__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.quality__item-title {
+  font-size: 1rem;
+  color: #1c2024;
+  font-weight: 500;
+}
+
+.quality__item-text {
+  font-size: 1rem;
+  color: #60646c;
+}
+
+/* 768px => 304px mínimo */
+@media (min-width: 48rem) {
+  .quality__list {
+    grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+  }
+}
+
+/* 1024px => 232px mínimo */
+@media (min-width: 64rem) {
+  .quality__list {
+    grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  }
+}
